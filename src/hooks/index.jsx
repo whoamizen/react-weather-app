@@ -12,6 +12,7 @@ export const useWeather = () => {
       setWeather(null);
       return;
     }
+    setNotFound(false);
     setWeather({
       icon: data.weather[0].icon,
       description: data.weather[0].description,
